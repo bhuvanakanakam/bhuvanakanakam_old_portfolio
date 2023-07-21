@@ -1,0 +1,68 @@
+{
+  "(Development Mode)": "false",
+  "(WebUrl)": "kanakambhuvana.github.io",
+  "About": {
+    "AboutLong": "Passionate about technology and skilled at the intersection of math and coding, I have a strong enthusiasm for learning. From challenging classes in high school to pursuing computer science, I embrace every opportunity to grow and excel.\n\nBeyond coding, I find joy in dancing, sports, movies, books, and music. A team player at heart, I value collaboration and embrace diverse perspectives, constantly seeking personal and professional growth.\n\nExcited to contribute my skills and bring fresh perspectives to innovative projects. I am always on the lookout for new opportunities to expand my knowledge and experience, whether through work, campus involvement, or other learning experiences.",
+    "AboutShort": "A rising junior at Mahindra University, studying computer science and engineering",
+    "EmailId": "se21ucse035@mahindrauniversity.edu.in",
+    "Gender": "female",
+    "Name": {
+      "FirstName": "Bhuvana",
+      "LastName": "Kanakam"
+    },
+    "Profession": "Machine Learning Engineer, Intern",
+    "ProfileImage": "./assets/aboutme.png",
+    "ResumeUrl": "https://drive.google.com/file/d/1Yzzwb3sYQOFtrGzQ9o8r6ghrq16nVu9m/view?usp=drive_link",
+    "SocialMedia": {
+      "Github": "https://github.com/vanztarr",
+      "Instagram": "https://www.instagram.com/b.knkm/",
+      "Linkedin": "https://www.linkedin.com/in/bhuvana-kanakam/"
+    }
+  },
+  "Education": {
+    "1 - high school": {
+      "Completed": "true/false",
+      "CourseDuration": "from(month) - to(month)",
+      "CourseName": "High School",
+      "Description": "Completed high school with a focus on science and mathematics.",
+      "ImageUrl": "Image url",
+      "InstituteName": "Bhashyam High School"
+    },
+    "2 - Graduation": {
+      "Completed": "true/false",
+      "CourseDuration": "from(month) - to(month)",
+      "CourseName": "BTech, Computer Science and Engineering",
+      "Description": "Currently pursuing a BTech degree in Computer Science and Engineering at Mahindra University.",
+      "ImageUrl": "Image url",
+      "InstituteName": "Mahindra University"
+    }
+  },
+  "Experience": {
+    "1 - company name": {
+      "JobDescription": "**Lorem ipsum dolor, sit amet consectetur** adipisicing elit.//Quos, incidunt. Asperiores quisquam voluptas architecto quis unde eius a nemo, natus ex, perspiciatis harum exercitationem deserunt soluta assumenda necessitatibus neque. Quam!",
+      "companyName": "Company name",
+      "period": "From (Month) - to (Month) Year",
+      "title": "Job title"
+    }
+  },
+  
+  "Projects": {
+    "1 - Project": {
+      "ImageUrl": "Image url",
+      "Library": "Library 1, Library 2",
+      "ProjectLink": "Project link",
+      "ProjectScale": "Major",
+      "Techstack": "Techstack 1, Techstack 2, Techstack 3",
+      "Title": "Project name",
+      "Description" : "Description of the project goes here."
+    }
+  },
+  "Skills": [
+    "Skill Name 1, major, skill image url 1",
+    "Skill Name 2, major, skill image url 2",
+    "Skill Name 3, major, skill image url 3",
+    "Skill Name 4, minor, skill image url 4",
+    "Skill Name 5, minor, skill image url 5"
+  ]
+}
+

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Hello, I'm Bhuvana Kanakam, a passionate computer science student exploring the world of technology. Detail-oriented, self-motivated, and a quick learner, I embrace innovation and creativity. Join me on this exciting journey!">
+  <meta name="keywords" content="computer science, student, intern">
+  <meta name="author" content="Bhuvana Kanakam">
+  <meta property="og:image" content="./assets/scared.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhuvanakanakam.github.io">
+  
+  <title>Portfolio</title>
+  <link rel="canonical" href="https://bhuvanakanakam.github.io" />
+  <link rel="shortcut icon" href="./assets/aboutme.png" type="image/x-icon" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="loader.min.css">
+  <!-- CDN's -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+  </head>
+  <body>
+
+  
+    <!--Loader-->
+    <div class="loaderDiv">
+      <div class="loader"></div>
+      <p>Loading page</p>
+    </div>
+    <!--Toaster-->
+      <div class="toaster"></div>
+      <!--Div for background-->
+        <div class="bg-div"></div>
+    
+    <!----------------------- HEADER ------------------------->
+    <header class="header" id="header">
+      <div class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a
+              class="navbar-link active"
+              name="home"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="4"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="about"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="5"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="skills"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="6"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="projects"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="7"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="education"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="8"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="experience"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="9"
+              >Experience</a
+            >
+          </li>
+        
+    </header>
+    <!----------------------- HOME SECTION ------------------------->
+    <section class="section home-section" id="home" tabindex="42">
+      <div>
+        <h1>Hey, I'm <span class="name">Bhuvana Kanakam</span></h1>
+        <p class="aboutShort">
+          A rising junior at Mahindra University, studying computer science and engineering.
+        </p>
+        <button
+          class="about-me-btn button"
+          name="about"
+          onclick="scrollToSection(this)"
+          tabindex="2"
+        >
+          About Me
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="">
+        <div class="imgDiv">
+          <img src="./assets/profile.png" class="profile-image" />
+        </div>
+      </div>
+    </section>
+    
+    <!----------------------- ABOUT SECTION ------------------------->
+    <section id="about" class="section about-section" tabindex="11">
+      <div class="about-ill"><img src="./assets/aboutme.png" alt="Memoji" /></div>
+      <div
+        class="aboutMe"
+        data-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h2 class="name">Bhuvana Kanakam</h2>
+        <div class="professionContainer">
+          <p class="profession">student</p>
+          <p class="profession">machine learning </p>
+        </div>
+        <br/>
+        <p class="aboutLong"> 
+          Passionate about technology and skilled at the intersection of math and coding, 
+          I have a strong enthusiasm for learning. From challenging classes in high school 
+          to pursuing computer science, I embrace every opportunity to grow and excel.
+          
+          Beyond coding, I find joy in dancing, sports, movies, books, and music. 
+          A team player at heart, I value collaboration and embrace diverse perspectives, 
+          constantly seeking personal and professional growth.
+          
+          Excited to contribute my skills and bring fresh perspectives to innovative projects. 
+          I am always on the lookout for new opportunities to expand my knowledge and experience, 
+          whether through work, campus involvement, or other learning experiences.
+        </p>
+        <br/>
+        <a
+          class="button"
+          href="https://drive.google.com/file/d/1Yzzwb3sYQOFtrGzQ9o8r6ghrq16nVu9m/view?usp=drive_link"
+          target="_blank"
+          tabindex="12"
+        >
+          Resume
+          <ion-icon name="document-outline"></ion-icon>
+        </a>
+      </div>
+      <ul
+        class="social-menu"
+        data-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-delay="500"
+        data-aos-once="true"
+      >
+        <li id="linkedin">
+          <a
+            href="https://www.linkedin.com/in/bhuvana-kanakam/"
+            aria-label="linkedin"
+            class="linkedin"
+            tabindex="13"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li id="github">
+          <a
+            href="https://github.com/bhuvanakanakam"
+            aria-label="github"
+            class="github"
+            tabindex="14"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li id="instagram">
+          <a
+            href="https://www.instagram.com/b.knkm/"
+            aria-label="instagram"
+            class="instagram"
+            tabindex="15"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+    
+    <!----------------------- SKILLS SECTION ------------------------->
+    <section class="section skill-section" id="skills" tabindex="17">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h1 class="title">
+          My Skills
+          <p>Tiles in <span>blue</span> are some of my major skills.</p>
+        </h1>
+        <div class="skill-container">
+          <div class="major">
+            <img src="./assets/c-pic.png" alt="Skill image 1" />
+            <p>C</p>
+          </div>
+          <div class="major">
+            <img src="./assets/python-pic.png" alt="Skill image 2" />
+            <p>Python</p>
+          </div>
+          <div class="major">
+            <img src="./assets/html5-pic.png" alt="Skill image 3" />
+            <p>HTML5</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/java-pic.png" alt="Skill image 4" />
+            <p>Java</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/javascript-pic.png" alt="Skill image 5" />
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------- PROJECT SECTION ------------------------->
+    <section class="section main project-section" id="projects" tabindex="18">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <div class="section-header">
+          <h1 class="title">
+            My recent work
+            <p class="sectionDesc">
+              Here are a few past projects I've worked on. Want to see more?<a
+                href="https://www.gmail.com"
+                tabindex="22"
+              >
+                Email me ></a
+              >
+            </p>
+          </h1>
+          <img
+            class="ProjectHeaderImage"
+            src="./assets/project-head.png"
+            alt="Project header image"
+          />
+        </div>
+        <div class="project card-container">
+          <div class="project card 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/project.png" alt="Project image" />
+            </div>
+            <br />
+            <h6>Project Title 1</h6>
+            <p class="techstack">
+              <span> Techstack </span> - Techstack 1, Techstack 2
+            </p>
+            <p class="library">
+              <span> Libraries </span> - Library 1, Library 2
+            </p>
+            <div class="options">
+              <a
+                class="viewElem"
+                href="https://bhuvanakanakam.github.io"
+                target="_blank"
+              >
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+              <a class="githubElem" href="https://github.com/bhuvanakanakam" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="project card 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/project.png" alt="Project image" />
+            </div>
+            <br />
+            <h6>Project Title 2</h6>
+            <p class="techstack">
+              <span> Techstack </span> - Techstack 1, Techstack 2
+            </p>
+            <p class="library">
+              <span> Libraries </span> - Library 1, Library 2
+            </p>
+            <div class="options">
+              <a
+                class="viewElem"
+                href="https://bhuvanakanakam.github.io"
+                target="_blank"
+              >
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+              <a class="githubElem" href="https://github.com/bhuvanakanakam" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="project card 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/project.png" alt="Project image" />
+            </div>
+            <br />
+            <h6>Project Title 3</h6>
+            <p class="techstack">
+              <span> Techstack </span> - Techstack 1, Techstack 2
+            </p>
+            <p class="library">
+              <span> Libraries </span> - Library 1, Library 2
+            </p>
+            <div class="options">
+              <a
+                class="viewElem"
+                href="https://sushaingupta.netlify.app"
+                target="_blank"
+              >
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+              <a class="githubElem" href="https://github.com" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------- EDUCATION SECTIONS ------------------------>
+    <section class="section education-section" id="education" tabindex="23">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h1 class="title">
+          Education
+        </h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="imgDiv">
+              <img src="./assets/graduation.png" alt="Institute image"/>
+            </div>
+            <br />
+            <h6 class="courseName">B.Tech, Computer Science and Engineering</h6>
+            <p class="instituteName">Mahindra University</p>
+            <p class="instituteDesc">Ecole Centrale School of Engineering</p>
+            <br/>
+            <p class="status Pursuing">2021 - current</p>
+          </div>
+          <div class="card">
+            <div class="imgDiv">
+              <img src="./assets/school.png" alt="Institute image"/>
+            </div>
+            <br/>
+            <h6 class="courseName">High School</h6>
+            <p class="instituteName">Bhashyam High School</p>
+            <p class="instituteDesc">Graduated with a cum laude GPA</p>
+            <br/>
+            <p class="status Completed">2017-2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!------------------------- EXPERIENCE SECTION ------------------------->
+    <section class="section experience-section" id="experience" tabindex="24">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h1 class="title">
+          Experience
+          <p>These are the compaines where I want to work now.</p>
+        </h1>
+        <div class="expContainer">
+          <ul class="listOfExp">
+            <li class="companyName active" tabindex="${tabindex}">
+              Company name
+            </li>
+          </ul>
+          <div class="expDesc">
+            <h4 class="expTitle">Job title</h4>
+            <p class="period">From (Month) - to (Month) Year</p>
+            <br />
+            <p class="desc">
+              some company re, why do you care.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Scripts -->
+    <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/commonScript.js"></script>
+    <script src="./scripts/script.js"></script>
+    
+    <!-- External scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
