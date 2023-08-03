@@ -203,4 +203,4 @@ const setSkeleton = () => {
 
 
 console.log("[36m%s[0m", "36mHey developer, there are no logs here. sheesh!");
-console.log("[36m%s[0m", "36mHey developer, Repo available at https://github.com/sushain-gupta/Portfolio-fullstck-p");
+console.log("[36m%s[0m", "36mHey developer, Repo available at https://github.com/bhuvanakanakam/bhuvanakanakam.github.io");
