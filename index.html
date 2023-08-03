@@ -34,9 +34,7 @@
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script src="./scripts/firebaseInit.js"></script>
+  
   </head>
   <body>
 
@@ -77,8 +75,7 @@
               name="about"
               onclick="scrollToSection(this),toggleNav()"
               tabindex="5"
-              >About</a
-            >
+              >About</a>
           </li>
           <li>
             <a
@@ -86,8 +83,7 @@
               name="skills"
               onclick="scrollToSection(this),toggleNav()"
               tabindex="6"
-              >Skills</a
-            >
+              >Skills</a>
           </li>
           <li>
             <a
@@ -95,8 +91,7 @@
               name="projects"
               onclick="scrollToSection(this),toggleNav()"
               tabindex="7"
-              >Projects</a
-            >
+              >Projects</a>
           </li>
           <li>
             <a
@@ -104,16 +99,17 @@
               name="education"
               onclick="scrollToSection(this),toggleNav()"
               tabindex="8"
-              >Education</a
-            >
-          </li>
-          <ion-icon
-        tabindex="3"
-        name="menu-outline"
-        class="mobile-nav-icon"
-        onclick="toggleNav()"
-      ></ion-icon>        
-    </header>
+              >Education</a>
+            </li>
+          </ul>
+        </div>
+        <ion-icon
+          tabindex="3"
+          name="menu-outline"
+          class="mobile-nav-icon"
+          onclick="toggleNav()"
+        ></ion-icon>
+      </header>
 
     <!----------------------- HOME SECTION ------------------------->
     <section class="section home-section" id="home" tabindex="42">
@@ -175,7 +171,7 @@
         <br/>
         <a
           class="button"
-          href="https://drive.google.com/file/d/1Yzzwb3sYQOFtrGzQ9o8r6ghrq16nVu9m/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1hpwJhV5gUlVmQpr4mSRYsyIwrSegXAug/view?usp=sharing"
           target="_blank"
           tabindex="12"
         >
@@ -363,7 +359,13 @@
     <script src="./scripts/firebase.js"></script>
     <script src="./scripts/commonScript.js"></script>
     <script src="./scripts/script.js"></script>
-    
+    <script>
+      // Sample toggleNav() function to toggle the navigation bar visibility
+      function toggleNav() {
+        var navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show'); // Add a CSS class to show/hide the navigation bar
+      }
+    </script>
     <!-- External scripts -->
     <script
       type="module"
