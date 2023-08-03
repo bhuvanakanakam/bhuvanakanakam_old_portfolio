@@ -20,45 +20,8 @@ window.addEventListener("scroll", (()=>{
 ));
 const scrollToSection = e=>{
   document.querySelector(`#${e.getAttribute("name")}`).scrollIntoView()
-}
-;
+};
 console.log("\x1B[36mHey developer, there are no logs here. jeez!");
 console.log(
   "\x1B[36mRepo is available at https://github.com/bhuvanakanakam/bhuvanakanakam.github.io"
 );
-ref.child("(Development Mode)").on("value", (mode=>{
-  toString(mode.val());
-  DevMode = /true|T|True|t|on|On/.test(mode.val()) ? "on" : "once";
-  if (DevMode == "on") {
-      ref.on("value", (snapshot=>{
-          Header(snapshot);
-          Home(snapshot);
-          About(snapshot);
-          Skills(snapshot);
-          Project(snapshot);
-          Education(snapshot);
-          Experience(snapshot);
-          Contact(snapshot);
-          Footer(snapshot);
-          setSkeleton();
-          navHighlighter()
-      }
-      ))
-  } else {
-      ref.once("value", (snapshot=>{
-          Header(snapshot);
-          Home(snapshot);
-          About(snapshot);
-          Skills(snapshot);
-          Project(snapshot);
-          Education(snapshot);
-          Experience(snapshot);
-          Contact(snapshot);
-          Footer(snapshot);
-          setSkeleton();
-          navHighlighter()
-      }
-      ))
-  }
-}
-));
