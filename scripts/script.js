@@ -38,55 +38,15 @@ window.addEventListener("scroll", () => {
   navHighlighter();
 });
 
-/*------------------------------------
-        ON SCROLL FUNCTION
- -------------------------------------*/
+/*----- ON SCROLL FUNCTION -------*/
 
 const scrollToSection = (e) => {
   document.querySelector(`#${e.getAttribute("name")}`).scrollIntoView();
 };
 
-/*-------------------------------------------
----------------------------------------------*/
+/*-------------------------------------*/
 
-console.log("\x1B[36mHey developer, there are no logs here. sheesh!");
+console.log("\x1B[36mHey developer, there are no logs here. jeez!");
 console.log(
-  "\x1B[36mRepo available at https://github.com/sushain-gupta/Portfolio"
+  "\x1B[36mRepo is available at https://github.com/bhuvanakanakam/bhuvanakanakam.github.io"
 );
-
-/*-------------------------------------------
-                FIREBASE
----------------------------------------------*/
-
-//----------DEVELOPMENT MODE SETUP-------------
-ref.child("(Development Mode)").on("value", (mode) => {
-  toString(mode.val());
-  DevMode = /true|T|True|t|on|On/.test(mode.val());
-});
-
-ref.on("value", (snapshot) => {
-  DevMode == true && Header(snapshot);
-  Home(snapshot);
-  About(snapshot);
-  Skills(snapshot);
-  Project(snapshot);
-  Education(snapshot);
-  Experience(snapshot);
-  Contact(snapshot);
-  Footer(snapshot);
-  setSkeleton();
-  navHighlighter();
-});
-ref.once("value", (snapshot) => {
-  DevMode == false && Header(snapshot);
-  Home(snapshot);
-  About(snapshot);
-  Skills(snapshot);
-  Project(snapshot);
-  Education(snapshot);
-  Experience(snapshot);
-  Contact(snapshot);
-  Footer(snapshot);
-  setSkeleton();
-  navHighlighter();
-});
