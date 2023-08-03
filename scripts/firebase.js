@@ -1,5 +1,5 @@
 // defining WebUrl (Live url to portfolio)
-ref.child("(WebUrl)").on("value", (url) => {
+ref.child("WebUrl").on("value", (url) => {
   WebUrl = url.val() ?? "";
 });
 
@@ -9,18 +9,19 @@ ref.child("(WebUrl)").on("value", (url) => {
 
 // This event is triggered once and then again every time any change is done to the specified path.
 ref.child("About").on("value", (snapshot) => {
-  const About = Object(snapshot.val());
+  const About = snapshot.val();
 
-  firstName = About.Name.FirstName ?? "";
-  lastName = About.Name.LastName ?? "";
+  // Set user details from JSON data
+  firstName = About.name?.first ?? "";
+  lastName = About.name?.last ?? "";
 
-  aboutShort = About.AboutShort ?? "";
-  aboutLong = About.AboutLong ?? "";
+  aboutShort = About.about?.short ?? "";
+  aboutLong = About.about?.long ?? "";
 
   // While a text contains "//" or "**" replace every "//" with <br> (for new line) and "**" with <b> and </b> alternatively (bold text).
   // "array" is the Array from which text is to be taken by providing the name of the key
   // keyName is the key in array with the text as its value.
-  testDesc = (array, keyName) => {
+  const testDesc = (array, keyName) => {
     var val = array[`${keyName}`];
     while (val.includes("//") || val.includes("**")) {
       val = val.replace("**", "<b class='boldElem'>");
@@ -38,31 +39,25 @@ ref.child("About").on("value", (snapshot) => {
   testDesc(About, "AboutShort");
   testDesc(About, "AboutLong");
 
-  // set new about description with tags respectively.
-  aboutShort = About["AboutShort"];
-  aboutLong = About["AboutLong"];
-
-  // If profile url found in database, set as url. If url not found, check for gender and set image as per gender. If gender was also not found, set a default image as profile image.
-  ProfileImage = About.ProfileImage
-    ? About.ProfileImage
-    : About.Gender == "male"
-    ? "./assets/male.png"
-    : About.Gender == "female"
-    ? "./assets/female.png"
-    : "./assets/project.png";
-
-  professions = About.Profession.split(",") ?? "";
-  resumeUrl = About.ResumeUrl;
-  emailId = About.EmailId;
-
-  //---Social media values---
-  socialMenu = About.SocialMedia;
-  linkedin = socialMenu.Linkedin;
-  twitter = socialMenu.Twitter;
-  instagram = socialMenu.Instagram;
-  github = socialMenu.Github;
-});
-
+    // set new about description with tags respectively.
+    aboutShort = About["aboutShort"];
+    aboutLong = About["aboutLong"];
+  
+    // If profile url found in database, set as url. If url not found, set a default image as profile image.
+    ProfileImage = About.profileImage
+      ? About.profileImage
+      : "./assets/profile.png";
+  
+    professions = About.professions?.split(",") ?? "";
+    resumeUrl = About.resumeUrl;
+    emailId = About.emailId;
+  
+    //---Social media values---
+    socialMenu = About.socialMenu;
+    linkedin = socialMenu?.linkedin;
+    github = socialMenu?.github;
+    instagram = socialMenu?.instagram;
+  });
 /*-------------------------------------------
        FUNCTION TO SET SOCIALS OF USER
 ---------------------------------------------*/
