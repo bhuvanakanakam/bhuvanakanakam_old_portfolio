@@ -118,32 +118,86 @@
           onclick="toggleNav()"
         ></ion-icon>
       </header>
-
+    
+    <header class="header header-scroll-style active" id="header">
+      <p class="logo initials" tabindex="1" href="" style="display: none;"></p>
+      <div class="logo img">
+        <img class="" 
+        src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1678016307/Portfolio/Untitled_design_2_-PhotoRoom.png-PhotoRoom_atrult.png" 
+        alt="logo">
+      </div>
+      <div class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a 
+            class="navbar-link active" 
+            name="home" 
+            onclick="scrollToSection(this),toggleNav()" 
+            tabindex="4"
+            >Home
+            </a>
+          </li>
+          <li>
+            <a 
+            class="navbar-link" 
+            name="about" 
+            onclick="scrollToSection(this),toggleNav()" 
+            tabindex="5"
+            >About
+            </a>
+          </li>
+          <li>
+            <a 
+            class="navbar-link" 
+            name="skills" 
+            onclick="scrollToSection(this),toggleNav()" 
+            tabindex="6"
+            >Skills
+            </a>
+          </li>
+          <li>
+            <a 
+            class="navbar-link" 
+            name="projects" 
+            onclick="scrollToSection(this),toggleNav()" 
+            tabindex="7"
+            >Projects
+            </a>
+          </li>
+          <li>
+            <a 
+            class="navbar-link" 
+            name="education" 
+            onclick="scrollToSection(this),toggleNav()" 
+            tabindex="8"
+            >Education
+            </a>
+          </li>
+        </ul>
+        <a class="contactBtn button" name="getInTouch" tabindex="10">Contact</a>
+        <ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon md hydrated" onclick="toggleNav()" role="img" aria-label="close outline"></ion-icon>
+      </div>
+      <ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon md hydrated" onclick="toggleNav()" role="img" aria-label="menu outline"></ion-icon>
+    </header>
     <!----------------------- HOME SECTION ------------------------->
     <section class="section home-section" id="home" tabindex="42">
       <div>
-        <h1>Hey, I'm <span class="name">Bhuvana Kanakam</span></h1>
-        <p class="aboutShort" >
-          A rising junior at Mahindra University,  
-          studying computer science and engineering.
-        </p>
+        <h1>Hey, I'm <span class="name">Bhuvana Kanakam</span>
+        </h1>
+        <p class="aboutShort" > A rising junior at Mahindra University, studying computer science and engineering.</p>
         <button
           class="about-me-btn button"
           name="about"
           onclick="scrollToSection(this)"
-          tabindex="2"
-        >
-        About Me &gt;
-        <ion-icon name="chevron-forward-outline"></ion-icon>
+          tabindex="2" >About Me 
+            &gt;
+          <ion-icon name="chevron-forward-outline"></ion-icon>
         </button>
       </div>
       <div class="imgDiv">
-          <img src="./assets/profile.png" 
-          class="profile-image"
-          style="scale: 1; transition: all 0.2s ease 0s;" />
+        <img src="./assets/profile.png" class="profile-image" style="scale: 1; transition: all 0.2s ease 0s;" />
       </div>
     </section>
-    
     <!----------------------- ABOUT SECTION ------------------------->
     <section id="about" class="section about-section" tabindex="11">
       <div class="about-ill"><img src="./assets/aboutme.png" alt="Memoji" /></div>
@@ -338,7 +392,7 @@
             <p class="instituteName">Mahindra University, Ecole School of Engineering, Hyderabad, TS</p>
             <p class="instituteDesc">balancing education with experience through entrepreneurial projects to tackle complex societal challenges..</p>
             <br/>
-            <p class="status Pursuing">2021 - current</p>
+            <p class="status Pursuing"> Pursuing 2021 - current</p>
           </div>
           <div class="card">
             <div class="imgDiv">
@@ -349,7 +403,7 @@
             <p class="instituteName">Bhashyam High School</p>
             <p class="instituteDesc">I graduated cum laude with a 3.9/4.0 GPA, excelled in leadership as the President of the student body, won dance competitions at state and national levels, and actively participated in NCC and sports events. </p>
             <br/>
-            <p class="status Completed">2017-2021</p>
+            <p class="status Completed">Completed 2017-2021</p>
           </div>
         </div>
       </div>
