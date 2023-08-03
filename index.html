@@ -16,8 +16,8 @@
   <link rel="shortcut icon" href="./assets/aboutme.png" type="image/x-icon" />
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/loader.css">
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="stylesheet" href="styles/loader.min.css">
   <link rel="stylesheet" href="styles/projects.css">
   
   <!-- CDN's -->
@@ -50,6 +50,7 @@
     
     <!----------------------- HEADER ------------------------->
     <header class="header" id="header">
+      <p class="logo initials" tabindex="1" href="" style="display: none;"></p>
       <div class="logo img">
         <img
           class=""
@@ -57,7 +58,6 @@
           alt="logo"
         />
       </div>
-      <p class="logo initials" tabindex="1" href=""></p>
       <div class="navbar">
         <ul class="navbar-list">
           <li>
@@ -102,6 +102,14 @@
               >Education</a>
             </li>
           </ul>
+          <ion-icon 
+            tabindex="9" 
+            name="close-outline" 
+            class="mobile-nav-icon md hydrated" 
+            onclick="toggleNav()" 
+            role="img" 
+            aria-label="close outline"
+          ></ion-icon>
         </div>
         <ion-icon
           tabindex="3"
@@ -115,8 +123,8 @@
     <section class="section home-section" id="home" tabindex="42">
       <div>
         <h1>Hey, I'm <span class="name">Bhuvana Kanakam</span></h1>
-        <p class="aboutShort">
-          A rising junior at Mahindra University, 
+        <p class="aboutShort" >
+          A rising junior at Mahindra University,  
           studying computer science and engineering.
         </p>
         <button
@@ -125,14 +133,14 @@
           onclick="scrollToSection(this)"
           tabindex="2"
         >
-          About Me
-          <ion-icon name="chevron-forward-outline"></ion-icon>
+        About Me &gt;
+        <ion-icon name="chevron-forward-outline"></ion-icon>
         </button>
       </div>
-      <div class="">
-        <div class="imgDiv">
-          <img src="./assets/profile.png" class="profile-image" />
-        </div>
+      <div class="imgDiv">
+          <img src="./assets/profile.png" 
+          class="profile-image"
+          style="scale: 1; transition: all 0.2s ease 0s;" />
       </div>
     </section>
     
@@ -154,18 +162,12 @@
         <p class="aboutLong"> 
           Passionate about technology and skilled at the intersection of math and coding, 
           I have a strong enthusiasm for learning. From challenging classes in high school 
-          to pursuing computer science, I embrace every opportunity to grow and excel.
-        </p><br>
-        
-        <p class="aboutLong">
+          to pursuing computer science, I embrace every opportunity to grow and excel. <br>
           Beyond coding, I find joy in dancing, sports, movies, books, and music. 
           A team player at heart, I value collaboration and embrace diverse perspectives, 
-          constantly seeking personal and professional growth.
-        </p><br>
-        
-        <p class="aboutLong">
-          Excited to contribute my skills and bring fresh perspectives to innovative projects. 
-          I am always on the lookout for new opportunities to expand my knowledge and experience, 
+          constantly seeking personal and professional growth.<br> Excited to contribute 
+          my skills and bring fresh perspectives to innovative projects.I am always on the 
+          lookout for new opportunities to expand my knowledge and experience, 
           whether through work, campus involvement, or other learning experiences.
         </p>
         <br/>
@@ -235,16 +237,24 @@
         </h1>
         <div class="skill-container">
           <div class="major">
-            <img src="./assets/skill.png" alt="Skill image 1" />
-            <p>Skill name 1</p>
+            <img src=" https://res.cloudinary.com/dkezwrb3a/image/upload/v1674668115/Portfolio/skills/html_mcptab.svg" alt="HTML5 image">
+            <p>HTML5</p>
+          </div>
+          <div class="major">
+            <img src=" https://res.cloudinary.com/dkezwrb3a/image/upload/v1674668115/Portfolio/skills/css3_lhv35v.svg" alt="CSS3 image">
+            <p>CSS3</p>
+          </div>
+          <div class="major">
+            <img src=" https://res.cloudinary.com/dkezwrb3a/image/upload/v1674668115/Portfolio/skills/javascript_swauvr.svg" alt="JavaScript image">
+            <p>JavaScript</p>
           </div>
           <div class="minor">
-            <img src="./assets/skill.png" alt="Skill image 2" />
-            <p>Skill name 2</p>
+            <img src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1674668116/Portfolio/skills/python_drwvw3.svg" alt="Python image">
+            <p>Python</p>
           </div>
-          <div class="minor">
-            <img src="./assets/skill.png" alt="Skill image 3" />
-            <p>Skill name 3</p>
+          <div class="major">
+            <img src=" https://res.cloudinary.com/dkezwrb3a/image/upload/v1678096601/Portfolio/skills/github-logo_s0trsu.png" alt="Github image">
+            <p>Github</p>
           </div>
         </div>
       </div>
@@ -267,7 +277,8 @@
           <h1 class="title">
             My recent work
             <p class="sectionDesc">
-              Here are a few past projects I've worked on. 
+              Here are a few past projects I've worked on. Want to see more?
+              <a href="projects.html"tabindex="22"> View More &gt; </a>
             </p>
           </h1>
           <img
@@ -277,36 +288,24 @@
           />
         </div>
         <div class="project card-container">
-          <div class="project card 1" tabindex="">
+          <div class="project card major PortfolioWebsite1" tabindex="20">
             <div class="imgDiv">
-              <img src="./assets/project.png" alt="Project image" />
+              <img src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1678193761/Portfolio/projects/smartmockups_ley94uty-PhotoRoom.png-PhotoRoom-min_otg9xh.png" alt="Portfolio Website image" style="scale: 1; transition: all 0.2s ease 0s;">
             </div>
-            <br />
+            <br>
             <h6>Portfolio Website</h6>
-            <p class="techstack">
-              <span> Techstack </span> - Html5, CSS3, JavaScript
-            </p>
-            <p class="library">
-              <span> Libraries </span> - EmailJs, Tostify, AOS
-            </p>
+            <p class="techstack"><span> Techstack </span> - HTML5, CSS3, JavaScript, Firebase </p>
+            <p class="library"><span> Libraries </span> - EmailJs, Tostify, AOS </p>
             <div class="options">
-              <a
-                class="viewElem"
-                href="https://bhuvanakanakam.github.io"
-                target="_blank"
-              >
-                <ion-icon name="open-outline"></ion-icon>
+              <a class="viewElem" href="https://bhuvanakanakam.github.io/" 
+              target="_blank" tabindex="-1"><ion-icon name="eye-outline" 
+              role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
               </a>
-              <a class="githubElem" href="https://github.com/bhuvanakanakam" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
+              <a class="githubElem" href="https://github.com/sushain-gupta/Portfolio-website" 
+              target="_blank" tabindex="-1"><ion-icon name="code-outline" 
+              role="img" class="md hydrated" aria-label="code outline"></ion-icon>
               </a>
             </div>
-          </div>
-          <div class="project card 1" tabindex="">
-            <div class="imgDiv">
-              <img src="./assets/project.png" alt="Project image" />
-            </div>
-            <br />
           </div>
         </div>
       </div>
@@ -327,44 +326,75 @@
       >
         <h1 class="title">
           Education
+          <p>These are some of my past qualifications.</p>
         </h1>
         <div class="card-container">
           <div class="card">
             <div class="imgDiv">
-              <img src="./assets/edu.png" alt="Institute image"/>
+              <img src="/assets/edu.png" alt="Institute image" style="scale: 1; transition: all 0.2s ease 0s;">
             </div>
-            <br />
-            <h6 class="courseName">Bachelor of Technology</h6>
-            <p class="instituteName">Mahindra University</p>
-            <p class="instituteDesc">Computer Science and Engineering</p>
+            <br>
+            <h6 class="courseName">B.Tech | Computer Science & Engineering,</h6>
+            <p class="instituteName">Mahindra University, Ecole School of Engineering, Hyderabad, TS</p>
+            <p class="instituteDesc">balancing education with experience through entrepreneurial projects to tackle complex societal challenges..</p>
             <br/>
             <p class="status Pursuing">2021 - current</p>
           </div>
           <div class="card">
             <div class="imgDiv">
-              <img src="./assets/bag.png" alt="Institute image"/>
+              <img src="./assets/bag.png" alt="Institute image" style="scale: 1; transition: all 0.2s ease 0s;">
             </div>
             <br/>
             <h6 class="courseName">High School</h6>
             <p class="instituteName">Bhashyam High School</p>
-            <p class="instituteDesc">Graduated with a cum laude GPA</p>
+            <p class="instituteDesc">I graduated cum laude with a 3.9/4.0 GPA, excelled in leadership as the President of the student body, won dance competitions at state and national levels, and actively participated in NCC and sports events. </p>
             <br/>
             <p class="status Completed">2017-2021</p>
           </div>
         </div>
       </div>
     </section>
+
+     <div class="card BEInformationTechnology0">
+      <div class="imgDiv">
+        <img src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1678184751/Portfolio/graduation.png" alt="Institute image" style="scale: 1; transition: all 0.2s ease 0s;">
+      </div><br>
+
+        <h6 class="courseName">BE | Information Technology</h6>
+        <p class="instituteName">Zeal College Of Engineering &amp; Research, Pune, Maharashtra, India.</p>
+
+        <p class="instituteDesc">A NAAC Reaccredited "A" Grade College.</p><br>
+        <p class="status Pursuing">Pursuing 2020-2024</p>
+      </div>
+    
+      <div class="card HSCScience1">
+      <div class="imgDiv">
+        <img src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1678184752/Portfolio/high-school.png" alt="Institute image" style="scale: 1; transition: all 0.2s ease 0s;">
+      </div><br>
+
+        <h6 class="courseName">HSC | Science</h6>
+        <p class="instituteName">Pemraj Sarda College, Ahmednagar, Maharashtra, India.</p>
+
+        <p class="instituteDesc">A NAAC Reaccredited "A" Grade College.</p><br>
+        <p class="status Completed">Completed 2018-2020</p>
+      </div>
+    
+      <div class="card StateSecondaryCertificateSSC2">
+      <div class="imgDiv">
+        <img src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1678184752/Portfolio/school.png" alt="Institute image" style="scale: 1; transition: all 0.2s ease 0s;">
+      </div><br>
+
+        <h6 class="courseName">State Secondary Certificate (SSC)</h6>
+        <p class="instituteName">Yashshree Academy, Ahmednagar, Maharashtra, India.</p>
+
+        <p class="instituteDesc">The Best CBSE Affiliated School in Ahmednagar.</p><br>
+        <p class="status Completed">Completed 2018</p>
+      </div>
+    </div></div></section>
    
     <!-- Scripts -->
     <script src="./scripts/commonScript.js"></script>
     <script src="./scripts/script.js"></script>
-    <script>
-      // Sample toggleNav() function to toggle the navigation bar visibility
-      function toggleNav() {
-        var navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('show'); // Add a CSS class to show/hide the navigation bar
-      }
-    </script>
     <!-- External scripts -->
     <script
       type="module"
@@ -386,5 +416,8 @@
     <script>
       AOS.init();
     </script>
+    <div id="forest-ext-shadow-host"></div>
+    <quillbot-extension-portal></quillbot-extension-portal>
   </body>
+  <quillbot-extension-root></quillbot-extension-root>
 </html>
