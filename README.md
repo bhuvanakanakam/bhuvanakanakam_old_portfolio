@@ -1,1 +1,1 @@
-this is my website where i can show my portfolio in short
+personal portfolio template just for fun.
