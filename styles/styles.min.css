@@ -1,4 +1,8 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800;900&display=swap);@import url(https://fonts.googleapis.com/css2?family=Marcellus&display=swap);:root {
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Marcellus&display=swap);
+
+:root {
     font-size: 62.5%;
     --primary-yellow: #efcf5e;
     --parrot-green: #16a34a;
@@ -7,13 +11,13 @@
     --text-gray: #3f3f46;
     --dark-gray: #18181b;
     --fade-black: #000000d7;
-    --arrow-pointer: url("/assets/arrow-pointer.png"),auto
+    --arrow-pointer: url("/assets/arrow-pointer.png"), auto
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     cursor: var(--arrow-pointer)
 }
 
@@ -85,7 +89,7 @@ section {
     width: 35rem;
     transition: all .5s;
     -webkit-transition: all .5s;
-    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0
 }
 
 .card-container .card p {
@@ -122,14 +126,14 @@ section {
 
 h1 {
     font-size: 4rem;
-    font-family: Catamaran,sans-serif;
+    font-family: Catamaran, sans-serif;
     margin-bottom: 2rem;
     text-align: center
 }
 
 h2 {
     font-size: 3.2rem;
-    font-family: Catamaran,sans-serif;
+    font-family: Catamaran, sans-serif;
     font-weight: 800
 }
 
@@ -176,7 +180,8 @@ p {
     background-color: var(--parrot-green)
 }
 
-.button:focus,.button:hover {
+.button:focus,
+.button:hover {
     background-color: #22c55e;
     color: #fff;
     cursor: pointer
@@ -190,7 +195,7 @@ p {
 
 @media (hover: hover) {
     a:hover {
-        cursor:pointer
+        cursor: pointer
     }
 }
 
@@ -210,7 +215,7 @@ p {
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
-    background-image: linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 20%,rgba(255,255,255,.5) 60%,rgba(255,255,255,0));
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .2) 20%, rgba(255, 255, 255, .5) 60%, rgba(255, 255, 255, 0));
     animation: shimmer 2s infinite;
     content: ""
 }
@@ -237,7 +242,7 @@ p {
 
 .header .logo.initials {
     color: var(--dark-gray);
-    font-family: Catamaran,sans-serif;
+    font-family: Catamaran, sans-serif;
     font-size: 3rem;
     font-weight: 900
 }
@@ -295,7 +300,7 @@ p {
 
 .header .navbar .navbar-list .active {
     transform: translateY(-2px);
-    background-color: rgba(245,245,245,.0901960784);
+    background-color: rgba(245, 245, 245, .0901960784);
     text-decoration: underline;
     text-underline-offset: 1.3rem
 }
@@ -316,8 +321,8 @@ p {
     height: 6rem;
     animation: header-anim-1 .3s normal;
     transition: all 1s;
-    background-color: rgba(255,255,255,.95);
-    box-shadow: rgba(149,157,165,.2) 0 8px 24px
+    background-color: rgba(255, 255, 255, .95);
+    box-shadow: rgba(149, 157, 165, .2) 0 8px 24px
 }
 
 @keyframes header-anim-1 {
@@ -335,7 +340,7 @@ p {
     justify-content: space-between;
     padding-left: 12rem;
     padding-right: 12rem;
-    background-color: rgba(255,255,255,.96)
+    background-color: rgba(255, 255, 255, .96)
 }
 
 .home-section div {
@@ -352,12 +357,12 @@ p {
 }
 
 .home-section div h1 span {
-    font-family: Catamaran,sans-serif;
+    font-family: Catamaran, sans-serif;
     color: var(--primary-yellow)
 }
 
 .home-section div h3 {
-    font-family: Catamaran,sans-serif
+    font-family: Catamaran, sans-serif
 }
 
 .home-section div p {
@@ -379,7 +384,8 @@ p {
     font-size: 1.2rem
 }
 
-.home-section div .about-me-btn:focus,.home-section div .about-me-btn:hover {
+.home-section div .about-me-btn:focus,
+.home-section div .about-me-btn:hover {
     gap: 1rem;
     color: var(--light-blue);
     cursor: pointer;
@@ -406,7 +412,7 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: transparent;
-    background-image: linear-gradient(to bottom,rgba(255,255,255,.95),#fff,#fff,#f9f9f9,#f7f7f7)
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .95), #fff, #fff, #f9f9f9, #f7f7f7)
 }
 
 .about-section .about-ill {
@@ -470,54 +476,66 @@ p {
     color: #222
 }
 
-.social-menu a:focus,.social-menu a:hover {
+.social-menu a:focus,
+.social-menu a:hover {
     transform: scale(1.1);
     border-radius: 50%;
     cursor: pointer
 }
 
-.social-menu a:focus i,.social-menu a:hover i {
+.social-menu a:focus i,
+.social-menu a:hover i {
     color: #fff;
     cursor: pointer
 }
 
-.social-menu .linkedin:focus,.social-menu .linkedin:hover {
+.social-menu .linkedin:focus,
+.social-menu .linkedin:hover {
     background-color: #0077b5
 }
 
-.social-menu .github:focus,.social-menu .github:hover {
+.social-menu .github:focus,
+.social-menu .github:hover {
     background-color: #252525
 }
 
-.social-menu .instagram:focus,.social-menu .instagram:hover {
-    background: radial-gradient(circle at 30% 110%,#ffdb8b 0,#ee653d 25%,#d42e81 50%,#a237b6 75%,#3e5fbc 100%)
+.social-menu .instagram:focus,
+.social-menu .instagram:hover {
+    background: radial-gradient(circle at 30% 110%, #ffdb8b 0, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%)
 }
 
-.social-menu .twitter:focus,.social-menu .twitter:hover {
+.social-menu .twitter:focus,
+.social-menu .twitter:hover {
     background-color: #1da1f2
 }
 
-.social-menu .dribbble:focus,.social-menu .dribbble:hover {
+.social-menu .dribbble:focus,
+.social-menu .dribbble:hover {
     background-color: #db2777
 }
 
-.social-menu .flickr:focus,.social-menu .flickr:hover {
-    background-image: linear-gradient(to right,#1da1f2 50%,#db2777 50%)
+.social-menu .flickr:focus,
+.social-menu .flickr:hover {
+    background-image: linear-gradient(to right, #1da1f2 50%, #db2777 50%)
 }
 
-.social-menu .pinterest:focus,.social-menu .pinterest:hover {
+.social-menu .pinterest:focus,
+.social-menu .pinterest:hover {
     background-color: #e60023
 }
 
-.social-menu .medium:focus,.social-menu .medium:hover {
+.social-menu .medium:focus,
+.social-menu .medium:hover {
     background-color: var(--dark-gray)
 }
 
-.social-menu .facebook:focus,.social-menu .facebook:hover {
+.social-menu .facebook:focus,
+.social-menu .facebook:hover {
     background-color: #3b5998
 }
 
-.social-menu .behance:focus,.social-menu .behance:hover {
+.social-menu .behance:focus,
+.social-menu .behance:hover {
     background-color: var(--dark-gray)
 }
 
@@ -535,7 +553,7 @@ p {
     display: grid;
     grid-gap: 2rem;
     width: 80%;
-    grid-template-columns: repeat(auto-fit,minmax(15rem,15rem));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
     justify-content: center
 }
 
@@ -561,11 +579,11 @@ p {
 }
 
 .skill-section .skill-container .major {
-    background-color: rgba(34,211,238,.1137254902)
+    background-color: rgba(34, 211, 238, .1137254902)
 }
 
 .skill-section .skill-container .major:hover {
-    background-color: rgba(34,211,238,.1725490196)
+    background-color: rgba(34, 211, 238, .1725490196)
 }
 
 .skill-section .skill-container div:hover {
@@ -616,7 +634,7 @@ p {
 
 .project-section .card-container .card {
     height: 35rem;
-    background-image: linear-gradient(to top,#000,#121112,#1c1c1f,#25282b,#2d3436);
+    background-image: linear-gradient(to top, #000, #121112, #1c1c1f, #25282b, #2d3436);
     background-repeat: no-repeat;
     background-size: 100% 50%
 }
@@ -698,7 +716,7 @@ p {
 
 @media (hover: hover) {
     .project-section .card:hover .options::before {
-        transform:translateX(0);
+        transform: translateX(0);
         opacity: 1
     }
 
@@ -777,7 +795,7 @@ p {
     height: -moz-max-content;
     height: max-content;
     padding: 2rem 2rem;
-    border-left: 2px solid rgba(0,0,0,.152);
+    border-left: 2px solid rgba(0, 0, 0, .152);
     transition: ease-out .5s;
     -webkit-transition: ease-out .5s;
     word-wrap: break-word
@@ -789,7 +807,7 @@ p {
 }
 
 .experience-section .listOfExp li:hover {
-    background-color: rgba(0,0,0,.04);
+    background-color: rgba(0, 0, 0, .04);
     transition: all .2s;
     -webkit-transition: all .2s
 }
@@ -861,7 +879,7 @@ p {
     height: max-content;
     padding: 2rem;
     box-sizing: border-box;
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255, 255, 255, .9);
     border-radius: 1rem
 }
 
@@ -869,7 +887,8 @@ p {
     position: relative
 }
 
-.formDiv form div input,.formDiv form div textarea {
+.formDiv form div input,
+.formDiv form div textarea {
     width: 100%;
     padding: 1rem 0;
     font-size: 1.6rem;
@@ -885,7 +904,10 @@ p {
     border-radius: 0
 }
 
-.formDiv form div input:-webkit-autofill,.formDiv form div input:-webkit-autofill:active,.formDiv form div input:-webkit-autofill:focus,.formDiv form div input:-webkit-autofill:hover {
+.formDiv form div input:-webkit-autofill,
+.formDiv form div input:-webkit-autofill:active,
+.formDiv form div input:-webkit-autofill:focus,
+.formDiv form div input:-webkit-autofill:hover {
     transition-delay: 9999s
 }
 
@@ -901,7 +923,10 @@ p {
     -webkit-transition: all .5s
 }
 
-.formDiv form div input:focus~label,.formDiv form div input:valid~label,.formDiv form div textarea:focus~label,.formDiv form div textarea:valid~label {
+.formDiv form div input:focus~label,
+.formDiv form div input:valid~label,
+.formDiv form div textarea:focus~label,
+.formDiv form div textarea:valid~label {
     top: -2rem;
     left: 0;
     color: #041c32;
@@ -937,7 +962,7 @@ p {
     top: -5rem;
     padding: 2rem;
     border-radius: 1rem;
-    background-color: rgba(0,0,0,.942)
+    background-color: rgba(0, 0, 0, .942)
 }
 
 .footer .getInTouch h3 {
@@ -1038,13 +1063,13 @@ p {
 
 @media screen and (max-width: 1400px) {
     .footer .reachMeOut {
-        flex-direction:column
+        flex-direction: column
     }
 }
 
 @media screen and (max-width: 1300px) {
     .formDiv {
-        gap:2rem;
+        gap: 2rem;
         width: 100%;
         transform: scale(.9);
         margin-left: 0;
@@ -1066,7 +1091,7 @@ p {
 
 @media screen and (max-width: 1000px) {
     .section {
-        flex-direction:column;
+        flex-direction: column;
         padding: 5rem 8rem
     }
 
@@ -1337,12 +1362,12 @@ p {
 
 @media (max-width: 900px) {
     .section {
-        padding:12rem 2rem
+        padding: 12rem 2rem
     }
 
     .header .navbar {
         z-index: 1;
-        background-color: rgba(255,255,255,.8);
+        background-color: rgba(255, 255, 255, .8);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         flex-direction: column;
@@ -1407,7 +1432,7 @@ p {
         transition: all .95s;
         -webkit-transition: all .95s;
         padding: 1.5rem;
-        box-shadow: rgba(100,100,111,.2) 0 7px 29px 0
+        box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0
     }
 
     .header.active .navbar .contactBtn {
@@ -1440,7 +1465,7 @@ p {
     .skill-section .skill-container {
         grid-gap: 2rem;
         width: 100%;
-        grid-template-columns: repeat(auto-fit,minmax(11rem,11rem));
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
         justify-content: center
     }
 
@@ -1468,7 +1493,7 @@ p {
 
 @media screen and (max-width: 570px) {
     .home-section h1 {
-        align-items:center;
+        align-items: center;
         flex-direction: column;
         gap: 0;
         line-height: 5rem
@@ -1481,7 +1506,7 @@ p {
 
 @media screen and (min-width: 2400px) {
     :root {
-        font-size:100%
+        font-size: 100%
     }
 }
 
@@ -1491,14 +1516,14 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: rgba(0,0,0,.3);
+    box-shadow: rgba(0, 0, 0, .3);
     background: #f1f1f1
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #daa520
+    background: #3696c2
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #daa520
+    background: #3696c2
 }
