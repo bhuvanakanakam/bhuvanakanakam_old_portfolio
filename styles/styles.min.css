@@ -11,7 +11,7 @@
     --text-gray: #3f3f46;
     --dark-gray: #18181b;
     --fade-black: #000000d7;
-    --arrow-pointer: url("/assets/arrow-pointer.png"), auto
+    --arrow-pointer: url("assets/gradient-thunder-sky-pack.png"), auto
 }
 
 * {
@@ -358,7 +358,7 @@ p {
 
 .home-section div h1 span {
     font-family: Catamaran, sans-serif;
-    color: var(--primary-yellow)
+    color: #3696c2
 }
 
 .home-section div h3 {
@@ -939,128 +939,6 @@ p {
     -webkit-transition: all .5s
 }
 
-.footer {
-    position: relative;
-    display: flex;
-    background-color: var(--dark-gray);
-    height: -moz-max-content;
-    height: max-content;
-    min-height: 20rem;
-    align-items: center;
-    padding: 3.5rem 5rem 0 5rem;
-    justify-content: space-evenly;
-    color: #f7f7f7
-}
-
-.footer .getInTouch {
-    display: flex;
-    justify-content: space-evenly;
-    width: -moz-max-content;
-    width: max-content;
-    position: absolute;
-    gap: 2rem;
-    top: -5rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: rgba(0, 0, 0, .942)
-}
-
-.footer .getInTouch h3 {
-    color: #22c55e;
-    text-align: center
-}
-
-.footer .getInTouch p {
-    font-size: 1.4rem;
-    margin: auto
-}
-
-.footer .getInTouch a {
-    margin: auto
-}
-
-.footer .profInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw
-}
-
-.footer .profInfo .imgDiv {
-    display: flex;
-    overflow: hidden;
-    border-radius: 50%;
-    width: 9rem;
-    height: 100%;
-    margin: 1rem
-}
-
-.footer .profInfo .imgDiv img {
-    width: 100%;
-    height: 100%
-}
-
-.footer .profInfo p {
-    font-size: 1.2rem
-}
-
-.footer .profInfo p a {
-    color: var(--light-blue);
-    text-decoration: none;
-    cursor: pointer
-}
-
-.footer .profInfo p a:hover {
-    text-decoration: underline
-}
-
-.footer .reachMeOut {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    flex-wrap: wrap;
-    align-items: center;
-    border-left: 1px solid #f7f7f7
-}
-
-.footer .reachMeOut h3 {
-    width: 100%;
-    text-align: center;
-    margin: auto
-}
-
-.footer .reachMeOut .social-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 1.5rem
-}
-
-.footer .reachMeOut .social-menu a {
-    display: flex;
-    flex-direction: row;
-    width: 4rem;
-    height: 4rem
-}
-
-.footer .reachMeOut .social-menu a i {
-    font-size: 2.4rem;
-    color: #f7f7f7
-}
-
-.footer .reachMeOut .social-menu a:hover {
-    transform: scale(1);
-    border-radius: 50%
-}
-
-.footer .reachMeOut h2 {
-    text-align: center;
-    padding: 0 1rem
-}
-
 @media screen and (max-width: 1400px) {
     .footer .reachMeOut {
         flex-direction: column
@@ -1316,48 +1194,7 @@ p {
         color: var(--dark-gray)
     }
 
-    .footer {
-        flex-direction: column;
-        height: -moz-max-content;
-        height: max-content;
-        padding-top: 17rem;
-        justify-content: center
-    }
 
-    .footer .getInTouch {
-        flex-direction: column;
-        top: -15%
-    }
-
-    .footer .getInTouch p {
-        text-align: center
-    }
-
-    .footer .profInfo {
-        width: 90vw
-    }
-
-    .footer .reachMeOut {
-        width: -moz-max-content;
-        width: max-content;
-        margin-top: 3rem;
-        margin: 3rem 0;
-        border: none
-    }
-
-    .footer .social-menu {
-        width: 90vw;
-        margin: 3rem 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 1.5rem
-    }
-
-    .footer .social-menu a {
-        padding: 2.5rem;
-        background-color: #000;
-        border-radius: 50%
-    }
 }
 
 @media (max-width: 900px) {
